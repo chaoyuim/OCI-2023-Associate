@@ -46,8 +46,9 @@ With monitor service plus a function, there is a way to trigger an automatic sca
    - [x] **Schedule** based autoscalling 
    - [x] **Performance/Metric** based autoscalling
 
-![autoscallingconfig](./config-autoscalling.png)
-![autoscallingconfig2](./auto-scalling-config-2.png)
+
+<img src="./config-autoscalling.png" width="700" />
+<img src="./auto-scalling-config-2.png" width="700" />
 
 
 ## Oracle Cloud Agent
@@ -56,8 +57,8 @@ With monitor service plus a function, there is a way to trigger an automatic sca
 
 
 is a lightweight process that manages plugins running on the instance. Plugins collect performance metrics, install OS updates, and perform other instance management tasks. e.g **bastion**
-![oraclecloudagentpng](./oracle-cloud-agent-1.png)
 
+<img src="./oracle-cloud-agent-1.png" width="700" />
 
 
 - [OS Management](#)
@@ -66,3 +67,4 @@ is a lightweight process that manages plugins running on the instance. Plugins c
 - [Shelded Instances](#)
 - [Confidential Computing](#)
 - [Skill Check](#)
+
