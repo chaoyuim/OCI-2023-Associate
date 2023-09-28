@@ -19,7 +19,8 @@
 ## Vertical Scalling
 
 > :grey_question: What is Vertical Scaling?
-
+  
+    Vertical Scaling is taking existing instance and change its shape to bigger capacity, e.g the CPU count and Memory Size. 
 
 
 
