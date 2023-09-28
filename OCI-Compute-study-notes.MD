@@ -3,7 +3,10 @@
 - [Compute Adanced](#compute-adanced)
   - [Burstable Instance](#burstable-instance)
   - [Vertical Scalling](#vertical-scalling)
-  - [:red\_circle: Compute Auto Scalling](#red_circle-compute-auto-scalling)
+  - [Compute Auto Scalling](#compute-auto-scalling)
+  - [Oracle Cloud Agent](#oracle-cloud-agent)
+
+
 ## Burstable Instance
 
 > :grey_question: What is Burstable Instance
@@ -31,21 +34,32 @@ IP wont change
 With monitor service plus a function, there is a way to trigger an automatic scalling. But this will put instance into reboot which will create some ``downtime`` for your application. 
 
 
-## :red_circle: Compute Auto Scalling 
+## Compute Auto Scalling 
 
  - [x] Instance Copnfiguration
    - Instance configuration is a ``template`` that defines the settings to use when creating ``single instances`` or ``Instance Pools``
    - It **does not** include any block volume
  - [x] Instance Pool
    - is a set of instances managed as a group
-   - it can only associate with only 1 instance configuration
+   - one instance pool can only associate with only 1 instance configuration
  - [x] Autoscalling Policy
    - [x] **Schedule** based autoscalling 
    - [x] **Performance/Metric** based autoscalling
 
 ![autoscallingconfig](./config-autoscalling.png)
+![autoscallingconfig2](./auto-scalling-config-2.png)
 
-- [Oracle Cloud Agent](#)
+
+## Oracle Cloud Agent
+
+> What is Oralce Cloud Agent
+
+
+is a lightweight process that manages plugins running on the instance. Plugins collect performance metrics, install OS updates, and perform other instance management tasks. e.g **bastion**
+![oraclecloudagentpng](./oracle-cloud-agent-1.png)
+
+
+
 - [OS Management](#)
 - [Run Command](#)
 - [Instance Console Connection](#)
