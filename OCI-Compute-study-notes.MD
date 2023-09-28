@@ -2,7 +2,7 @@
 
 - [Compute Adanced](#compute-adanced)
   - [Burstable Instance](#burstable-instance)
-  - [Vertical Scalling](#vertical-scalling)
+  - [Vertical Scalling :sunny:](#vertical-scalling-sunny)
 
 ## Burstable Instance
 
@@ -16,11 +16,10 @@
 
 > :eyes: No all instances support Burst
 
-## Vertical Scalling
+## Vertical Scalling :sunny:
 
-> :grey_question: :sunny: What is Vertical Scaling? 
-  
-     Vertical Scaling is taking existing instance and change its shape to bigger capacity, e.g the CPU count and Memory Size. 
+> :grey_question: What is Vertical Scaling?
+
 
 
 
