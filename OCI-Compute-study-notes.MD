@@ -1,36 +1,23 @@
-# Learning-Github
-## sub heading
-### NEW Heading from a Collaborator
+# Compute Adanced
 
-Just a sample repo for learning the basics of GitHub.
+- [Burstable Instances](#burstable-instance)
+- [Compute Vertical Scalling](#)
+- [Compute Auto Scalling](#)
+- [Oracle Cloud Agent](#)
+- [OS Management](#)
+- [Run Command](#)
+- [Instance Console Connection](#)
+- [Shelded Instances](#)
+- [Confidential Computing](#)
+- [Skill Check](#)
 
-more text with two line breaks between.
+## Burstable Instance
 
-- first time
-- second time
-- third time
-  - indented
-    1. inner number
-    
-[this is the description](http://www.github.com)
+> What is Burstable Instance
 
-This paragraph has some `variable` inline code.
+  A burstable instance is a `virtual machine instance` that provides a `baseline level of CPU performance` with the ability to `burst to a higher level to support occasional spikes in usage`. Burstable instances are designed for scenarios where an instance is typically idle or has low CPU utilization with occasional spikes in usage.
 
-```html
-<p>A paragraph example</p>
-```
-```javascript
-let num = Math.random();
-```
+> Why Burstable Instance
 
-![alt text](http://picsum.photos/200/200)
+  It is cheaper than regular Instance, Burstable Instance provides a ``base line of 12.5% or 50% CPU performance``, when needed, it will burst / boost to 100%. However the ``cost is charged based on baseline`` settings. 
 
-Some paragraph with text.
-> blockquote text below the paragraph
-
-| heading | header | head |
-| --- | --- | --- |
-| content | more content | text |
-| more | more | more |
-
-This is being * created * on a ** Friday ** ~~Saturday~~.
