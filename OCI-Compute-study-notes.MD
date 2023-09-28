@@ -7,6 +7,8 @@
   - [Oracle Cloud Agent](#oracle-cloud-agent)
       - [Bastion \& OSMS Agent](#bastion--osms-agent)
   - [OS management service](#os-management-service)
+  - [Run Command](#run-command)
+  - [Instance Console Connection](#instance-console-connection)
 
 ## Burstable Instance
 
@@ -92,9 +94,16 @@ OS Management is an Oracle Cloud Infrastructure Service that provides automated 
 ----
 <img src="./os-management-service-1.ping.PNG" width="650" style="border-radius: 10px;" />
 
-- [Run Command](#)
-- [Instance Console Connection](#)
-- [Shelded Instances](#)
-- [Confidential Computing](#)
-- [Skill Check](#)
+## Run Command
 
+    So what is a run command? Well, using run command, you can remotely configure, manage, and troubleshoot compute instances by running scripts within the instance. You can run commands on an instance even when the instance does not have SSH access or open inbound ports.
+
+    The run command feature is supported on compute instances that use the platform images. So Oracle Autonomous Linux, Oracle Linux, CentOS, and Windows Server are supported. But Ubuntu is not supported.
+
+    On Linux instances, the script runs in a bash shell by default. And on Windows instances, the script runs as a batch file. The maximum size for a script file that you can upload directly to an instance in plain text is 4 KB.
+
+    To provide a larger file, save the file in an object storage location. The output of a script when written as plain text is limited to last 1 KB. To save a larger response, you can save the output to an object storage location.
+
+## Instance Console Connection 
+
+    The idea of a console connection is to give you a display of what is happening during the boot process. So you can remotely troubleshoot malfunctioning instances using console connections. And this is a special case, which you do not use for normal operations but for troubleshooting.
