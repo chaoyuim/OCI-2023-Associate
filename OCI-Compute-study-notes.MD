@@ -5,7 +5,8 @@
   - [Vertical Scalling](#vertical-scalling)
   - [Compute Auto Scalling](#compute-auto-scalling)
   - [Oracle Cloud Agent](#oracle-cloud-agent)
-
+      - [Bastion \& OSMS Agent](#bastion--osms-agent)
+  - [OS management service](#os-management-service)
 
 ## Burstable Instance
 
@@ -47,8 +48,11 @@ With monitor service plus a function, there is a way to trigger an automatic sca
    - [x] **Performance/Metric** based autoscalling
 
 
-<img src="./config-autoscalling.png" width="700" />
-<img src="./auto-scalling-config-2.png" width="700" />
+<img src="./config-autoscalling.png" width="650" style="border-radius: 10px;"  />
+
+----------------
+
+<img src="./auto-scalling-config-2.png" width="650" style="border-radius: 10px;"  />
 
 
 ## Oracle Cloud Agent
@@ -58,10 +62,36 @@ With monitor service plus a function, there is a way to trigger an automatic sca
 
 is a lightweight process that manages plugins running on the instance. Plugins collect performance metrics, install OS updates, and perform other instance management tasks. e.g **bastion**
 
-<img src="./oracle-cloud-agent-1.png" width="700" />
+> what does Oracle Cloud Agent Do?
+> - [x] Collect Instance Performance Metrics
+> - [x] Install Operating system updates
+> - [x] .. and other instance management tasks
+
+#### Bastion & OSMS Agent
+- ``Bastion`` for SSH 
+- ``OSMS Agent`` for manages patches and updates for OS environment
+----------
+
+<img src="./oracle-cloud-agent-1.png" width="650" style="border-radius: 10px;"  />
 
 
-- [OS Management](#)
+
+## OS management service
+
+> What is OS management Services
+
+OS Management is an Oracle Cloud Infrastructure Service that provides automated operating system patch and package management for ``ONLY`` **Oracle Linux** and **Windows**.
+
+> :sunny: To use it the following settings are need 
+
+---
+- [x] OCI dynmaic group
+- [x] IAM policies for OS management
+- [x] Enable Cloud Agent software on Instance
+- [x] Enable OSMS plugin   
+----
+<img src="./os-management-service-1.ping.PNG" width="650" style="border-radius: 10px;" />
+
 - [Run Command](#)
 - [Instance Console Connection](#)
 - [Shelded Instances](#)
