@@ -2,7 +2,7 @@
 
 - [Compute Adanced](#compute-adanced)
   - [Burstable Instance](#burstable-instance)
-  - [Vertical Scalling :sunny:](#vertical-scalling-sunny)
+  - [Vertical Scalling](#vertical-scalling)
 
 ## Burstable Instance
 
@@ -16,9 +16,15 @@
 
 > :eyes: No all instances support Burst
 
-## Vertical Scalling :sunny:
+## Vertical Scalling 
 
-> :grey_question: What is Vertical Scaling?
+> :sunny: :grey_question: What is Vertical Scaling?
+> - Vertical Scalling is about taking an existing instance and upgrade its CPU count and RAM amount.
+
+   
+
+> :sunny: when scalling up / down the instance needs a reboot
+> - IP wont change
 
 
 
