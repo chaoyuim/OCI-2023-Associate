@@ -8,6 +8,10 @@
     - [Auto Tiering](#auto-tiering)
   - [Object Lifecycle Management](#object-lifecycle-management)
   - [:blossom: Object Storage Replication](#blossom-object-storage-replication)
+  - [:page\_with\_curl: Object Versioning](#page_with_curl-object-versioning)
+    - [Object Versioning Status](#object-versioning-status)
+  - [Retention Rules](#retention-rules)
+    - [To understand time-bound retention rules, examples](#to-understand-time-bound-retention-rules-examples)
   - [Skill Checks](#skill-checks)
 
 
@@ -83,16 +87,41 @@ _______________
 >- :warning: objects uploaded before replication policy  are ignored, thus not replicated 
 
 
+## :page_with_curl: Object Versioning
+
+Versioning directs object storage to automatically create an object version, each time a new object is uploaded, an existing object is overwritten, or when an object is deleted. It is enabled at the bucket level. You can enable object versioning at bucket creation time or later. You cannot disable object versioning. You can, however, suspend versioning.
+
+It provides data protection against accidental or malicious object update, overwrite, or deletion. There is always one latest version of the object and zero or more previous versions. And you are going to be charged for all the latest object versions and previous object version. The previous object versions are retained until you explicitly delete them.
+
+### Object Versioning Status
+- Disabled
+- Enabled
+- Suspended
+  
+<img src="./pictures/object-storage-10.PNG" width="650" style="border-radius: 10px" />
+
+<img src="./pictures/object-storage-11.PNG" width="650" style="border-radius: 10px" />
 
 
+## Retention Rules
 
+:warning: `You cannot add retention rules to versioning enabled buckets. It only works with disabled/suspended status.`
 
+Retention rules protect your data from accidental or malicious update, overwrite, or deletion. It also provides immutable WORM-compliant storage options for data return to objects storage and archive storage, and the retention rules can be locked to prevent rule modification and data deletion or modification, even by administrators. Please, note that the retention rules are configured at the bucket level.
 
+There are two types of retention rules.
 
+- time-bound :watch:
+  - The first is time-bound, where you specify a duration during the creation of a retention rule. Object modification and deletion are prevented for the duration that you specify. 
+- indefinite  :imp:
+  - The second retention rule type is indefinite, where object modification and deletion are prevented, until you delete the rule.
 
+<img src="./pictures/object-storage-12.PNG" width="650" style="border-radius: 10px" />
 
+### To understand time-bound retention rules, examples
+<img src="./pictures/object-storage-13.PNG" width="650" style="border-radius: 10px" />
 
-
+`we have a time-bound retention rule of the duration of 1 year, we have two objects here 1 which was last modified 14 months ago and another 3 month ago. The retention rule will allow update/delete on Ocitest oject since the last update was 14 months ago (> 12 months) , and prevent ocidemo from updating/deletion (< 12 months)`
 
 
 
