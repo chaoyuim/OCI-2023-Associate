@@ -126,7 +126,7 @@ There are two types of retention rules.
 
 
 ## :train: Object Copy 
-
+<img src="./pictures/object-storage-14.PNG" width="650" style="border-radius: 10px" />
 
 
 
