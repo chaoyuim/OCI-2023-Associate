@@ -1,6 +1,6 @@
-# :cloud: Object Storage Basics
+# :cloud: Object Storage Basics & Advanced
 
-- [:cloud: Object Storage Basics](#cloud-object-storage-basics)
+- [:cloud: Object Storage Basics \& Advanced](#cloud-object-storage-basics--advanced)
   - [Overview](#overview)
   - [Object Storage Resources](#object-storage-resources)
   - [Object Storage Tiers](#object-storage-tiers)
@@ -126,7 +126,7 @@ There are two types of retention rules.
 
 
 ## :train: Object Copy 
-
+<img src="./pictures/object-storage-14.PNG" width="650" style="border-radius: 10px" />
 
 
 
