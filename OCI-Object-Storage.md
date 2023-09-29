@@ -12,6 +12,7 @@
     - [Object Versioning Status](#object-versioning-status)
   - [Retention Rules](#retention-rules)
     - [To understand time-bound retention rules, examples](#to-understand-time-bound-retention-rules-examples)
+  - [:train: Object Copy](#train-object-copy)
   - [Skill Checks](#skill-checks)
 
 
@@ -122,6 +123,11 @@ There are two types of retention rules.
 <img src="./pictures/object-storage-13.PNG" width="650" style="border-radius: 10px" />
 
 `we have a time-bound retention rule of the duration of 1 year, we have two objects here 1 which was last modified 14 months ago and another 3 month ago. The retention rule will allow update/delete on Ocitest oject since the last update was 14 months ago (> 12 months) , and prevent ocidemo from updating/deletion (< 12 months)`
+
+
+## :train: Object Copy 
+
+
 
 
 
