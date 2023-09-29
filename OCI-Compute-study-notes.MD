@@ -93,8 +93,8 @@ is a lightweight process that manages plugins running on the instance. Plugins c
 OS Management is an Oracle Cloud Infrastructure Service that provides automated operating system patch and package management for ``ONLY`` **Oracle Linux** and **Windows**.
 
 > :sunny: To use it, the following settings are required 
-> -----
-> :heavy_exclamation_mark: this feature takes a long time to activate
+
+:heavy_exclamation_mark: this feature takes a long time to activate
 
 ---
 - [x] OCI dynmaic group
