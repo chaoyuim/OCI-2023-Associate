@@ -12,6 +12,9 @@
   - [Infrastructure Maintenance](#infrastructure-maintenance)
     - [:link: Relocating a VM Instance](#link-relocating-a-vm-instance)
   - [Shielded Instances](#shielded-instances)
+    - [What is _Secure Boot_ ?](#what-is-secure-boot-)
+    - [what is _Measure Boot_ ?](#what-is-measure-boot-)
+    - [what is _TPM_ ?](#what-is-tpm-)
 
 ## Burstable Instance
 
@@ -136,3 +139,11 @@ it helps to harden the firmware security, defend against malicious boot level so
 - [ ] TPM trusted platform Module
 
 <img src="./shield-instance-1.png" width="650" style="border-radius: 10px;" />
+
+### What is _Secure Boot_ ?
+`Secure Boot is a Unified Extensible Firmware Interface feature that prevents unauthorized bootloaders and operating systems from booting. So boot components that are not properly signed are not allowed to run, preventing the system from booting.`
+### what is _Measure Boot_ ?
+`Measured Boot complements and enhances Secure Boot by storing measurements of boot components, such as bootloaders, drivers, and operating systems. And it verifies that these measurements don't change from one boot to the next.`
+
+### what is _TPM_ ?
+`Trusted Platform Module is a specialized security chip that is used by the Measured Boot to store the boot measurements securely. Enabling Measured Boot for virtual machines automatically enables the virtual Trusted Platform Module`
