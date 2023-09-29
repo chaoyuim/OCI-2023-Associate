@@ -105,7 +105,7 @@ It provides data protection against accidental or malicious object update, overw
 
 ## Retention Rules
 
-:warning: `You cannot add retention rules to versioning enabled buckets. It only works with disabled/suspended status.`
+:warning: `You cannot add retention rules to versioning enabled buckets. It only works with disabled/suspended versioning status.`
 
 Retention rules protect your data from accidental or malicious update, overwrite, or deletion. It also provides immutable WORM-compliant storage options for data return to objects storage and archive storage, and the retention rules can be locked to prevent rule modification and data deletion or modification, even by administrators. Please, note that the retention rules are configured at the bucket level.
 
