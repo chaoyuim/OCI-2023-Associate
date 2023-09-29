@@ -58,11 +58,11 @@ With monitor service plus a function, there is a way to trigger an automatic sca
    - [x] **Performance/Metric** based autoscalling
 
 
-<img src="./config-autoscalling.png" width="650" style="border-radius: 10px;"  />
+<img src="./pictures/config-autoscalling.png" width="650" style="border-radius: 10px;"  />
 
 ----------------
 
-<img src="./auto-scalling-config-2.png" width="650" style="border-radius: 10px;"  />
+<img src="./pictures/auto-scalling-config-2.png" width="650" style="border-radius: 10px;"  />
 
 
 ## Oracle Cloud Agent
@@ -82,7 +82,7 @@ is a lightweight process that manages plugins running on the instance. Plugins c
 - ``OSMS Agent`` for manages patches and updates for OS environment
 ----------
 
-<img src="./oracle-cloud-agent-1.png" width="650" style="border-radius: 10px;"  />
+<img src="./pictures/oracle-cloud-agent-1.png" width="650" style="border-radius: 10px;"  />
 
 
 
@@ -102,7 +102,7 @@ OS Management is an Oracle Cloud Infrastructure Service that provides automated 
 - [x] Enable Cloud Agent software on Instance
 - [x] Enable OSMS plugin   
 ----
-<img src="./os-management-service-1.ping.PNG" width="650" style="border-radius: 10px;" />
+<img src="./pictures/os-management-service-1.ping.PNG" width="650" style="border-radius: 10px;" />
 
 ### Run Command
 
@@ -140,7 +140,7 @@ it helps to harden the firmware security, defend against malicious boot level so
 - [ ] Measure Boot (:warning: only for VM instances,not on baremetal)
 - [ ] TPM trusted platform Module
 
-<img src="./shield-instance-1.png" width="650" style="border-radius: 10px;" />
+<img src="./pictures/shield-instance-1.png" width="650" style="border-radius: 10px;" />
 
 ### :question: What is _Secure Boot_ ?
 `Secure Boot is a Unified Extensible Firmware Interface feature that prevents unauthorized bootloaders and operating systems from booting. So boot components that are not properly signed are not allowed to run, preventing the system from booting.`
@@ -157,3 +157,39 @@ it helps to harden the firmware security, defend against malicious boot level so
 Confidential computing protects data in use at the hardware level. In confidential computing, both the data and the application processing the data are encrypted and isolated while the application processes the data. And that basically prevents unauthorized access or modification of either the data or the application.
 
 # Skill Check
+
+1. Which two are the supported types of autoscaling you can apply to an instance pool?
+- [ ] Predictive autoscaling
+- [x] Schedule-based autoscaling
+- [ ] Time-based autoscaling
+- [x] Metric-based autoscaling
+
+2. You want to encrypt and isolate in-use data and the applications processing that data. Which Oracle Cloud Infrastructure (OCI) offering would you use?
+
+- [ ] Private Computing
+- [ ] Privileged Computing
+- [ ] Secret Computing
+- [x] Confidential Computing
+
+3. You have an instance that cannot be live migrated. OCI schedules a maintenance due date within 14 to 16 days and sends you a notification.What would happen if you do not proactively reboot the instance before the due date?
+
+- [ ] OCI does not take any action.
+- [ ] OCI will send you another notification to reboot.
+- [ ] OCI will terminate the instance.
+- [x] The instance is either reboot migrated or rebuilt in place for you
+
+:star2: `If an instance cannot be live migrated, Oracle Cloud Infrastructure schedules a due date for reboot migration within 14 to 16 days and sends you a notification. If you do not proactively reboot the instance before the due date, the instance is reboot migrated for you.`
+
+4. Which statement about burstable instances is correct?
+- [ ] Burstable instances are designed for scenarios where an instance is not typically idle and has high CPU utilization.
+- [x] Burstable instances are charged according to the baseline OCPU.
+- [ ] The baseline utilization is a fraction of each CPU core, either 50% or 75%.
+- [ ] Burstable instances cost more than regular instances with the same total OCPU count.
+
+5. Which of the following statements about the Run Command feature is NOT true?
+- [ ] On Linux instances, the script runs in a Bash shell by default.
+- [ ] You can run commands on an instance even when the instance does not have SSH access or open inbound ports.
+- [x] The maximum size for a script file that you upload directly to an instance in plain text is 8 KB.
+- [ ] On Windows instances, the script runs in a batch shell by default.
+  
+:star2: `The maximum size for a script file that you upload directly to an instance in plain text is 4 KB. To provide a larger file, save the file in an Object Storage location. On Linux instances, the script runs in a Bash shell by default. To run the script with a different program, use #!/ as the first line of the script. On Windows instances, the script runs in a batch shell by default. To run the script with PowerShell, use #ps1 as the first line of the script. You can run commands on an instance even when the instance does not have SSH access or open inbound ports.`
