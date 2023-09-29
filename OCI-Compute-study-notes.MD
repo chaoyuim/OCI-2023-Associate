@@ -5,10 +5,13 @@
   - [Vertical Scalling](#vertical-scalling)
   - [Compute Auto Scalling](#compute-auto-scalling)
   - [Oracle Cloud Agent](#oracle-cloud-agent)
-      - [Bastion \& OSMS Agent](#bastion--osms-agent)
-  - [OS management service](#os-management-service)
-  - [Run Command](#run-command)
-  - [Instance Console Connection](#instance-console-connection)
+    - [Bastion \& OSMS Agent](#bastion--osms-agent)
+    - [OS management service](#os-management-service)
+    - [Run Command](#run-command)
+    - [Instance Console Connection](#instance-console-connection)
+  - [Infrastructure Maintenance](#infrastructure-maintenance)
+    - [:link: Relocating a VM Instance](#link-relocating-a-vm-instance)
+  - [Shielded Instances](#shielded-instances)
 
 ## Burstable Instance
 
@@ -69,7 +72,7 @@ is a lightweight process that manages plugins running on the instance. Plugins c
 > - [x] Install Operating system updates
 > - [x] .. and other instance management tasks
 
-#### Bastion & OSMS Agent
+### Bastion & OSMS Agent
 - ``Bastion`` for SSH 
 - ``OSMS Agent`` for manages patches and updates for OS environment
 ----------
@@ -78,13 +81,15 @@ is a lightweight process that manages plugins running on the instance. Plugins c
 
 
 
-## OS management service
+### OS management service
 
 > What is OS management Services
 
 OS Management is an Oracle Cloud Infrastructure Service that provides automated operating system patch and package management for ``ONLY`` **Oracle Linux** and **Windows**.
 
 > :sunny: To use it, the following settings are required 
+> -----
+> :heavy_exclamation_mark: this feature takes a long time to activate
 
 ---
 - [x] OCI dynmaic group
@@ -94,16 +99,40 @@ OS Management is an Oracle Cloud Infrastructure Service that provides automated 
 ----
 <img src="./os-management-service-1.ping.PNG" width="650" style="border-radius: 10px;" />
 
-## Run Command
+### Run Command
 
-    So what is a run command? Well, using run command, you can remotely configure, manage, and troubleshoot compute instances by running scripts within the instance. You can run commands on an instance even when the instance does not have SSH access or open inbound ports.
+  So what is a run command? Well, using run command, you can remotely configure, manage, and troubleshoot compute instances by running scripts within the instance. You can run commands on an instance even when the instance does not have SSH access or open inbound ports.
 
-    The run command feature is supported on compute instances that use the platform images. So Oracle Autonomous Linux, Oracle Linux, CentOS, and Windows Server are supported. But Ubuntu is not supported.
+  The run command feature is supported on compute instances that use the platform images. So Oracle Autonomous Linux, Oracle Linux, CentOS, and Windows Server are supported. But Ubuntu is not supported.
 
-    On Linux instances, the script runs in a bash shell by default. And on Windows instances, the script runs as a batch file. The maximum size for a script file that you can upload directly to an instance in plain text is 4 KB.
+  On Linux instances, the script runs in a bash shell by default. And on Windows instances, the script runs as a batch file. The maximum size for a script file that you can upload directly to an instance in plain text is 4 KB.
 
-    To provide a larger file, save the file in an object storage location. The output of a script when written as plain text is limited to last 1 KB. To save a larger response, you can save the output to an object storage location.
+  To provide a larger file, save the file in an object storage location. The output of a script when written as plain text is limited to last 1 KB. To save a larger response, you can save the output to an object storage location.
 
-## Instance Console Connection 
+### Instance Console Connection 
 
-    The idea of a console connection is to give you a display of what is happening during the boot process. So you can remotely troubleshoot malfunctioning instances using console connections. And this is a special case, which you do not use for normal operations but for troubleshooting.
+  The idea of a console connection is to give you a display of what is happening during the boot process. So you can remotely troubleshoot malfunctioning instances using console connections. And this is a special case, which you do not use for normal operations but for troubleshooting.
+
+## Infrastructure Maintenance
+
+### :link: Relocating a VM Instance
+Three options are provided when it comes to relocating a vm instance, they are.
+- [X] live migration
+  - lease disruption
+  - only on available on linux and specific shapes
+- [x] reboot migration (due date migration)
+  - short downtime 
+- [x] Manual migration
+  - preserve boot volume 
+  - create new instance with boot volume
+  - most work
+
+## Shielded Instances
+> what is ?
+
+it helps to harden the firmware security, defend against malicious boot level software. When you select supported platform and shape, you will see these options
+- [ ] Secure Boot
+- [ ] Measure Boot (:warning: only for VM instances,not on baremetal)
+- [ ] TPM trusted platform Module
+
+<img src="./shield-instance-1.png" width="650" style="border-radius: 10px;" />
