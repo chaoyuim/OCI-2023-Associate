@@ -16,7 +16,7 @@
     - [:question: what is _Measure Boot_ ?](#question-what-is-measure-boot-)
     - [:question: what is _TPM_ ?](#question-what-is-tpm-)
   - [Confidential Computing](#confidential-computing)
-- [Skill Check](#skill-check)
+  - [Skill Check](#skill-check)
 
 ## Burstable Instance
 
@@ -156,7 +156,7 @@ it helps to harden the firmware security, defend against malicious boot level so
 
 Confidential computing protects data in use at the hardware level. In confidential computing, both the data and the application processing the data are encrypted and isolated while the application processes the data. And that basically prevents unauthorized access or modification of either the data or the application.
 
-# Skill Check
+## Skill Check
 
 1. Which two are the supported types of autoscaling you can apply to an instance pool?
 - [ ] Predictive autoscaling
