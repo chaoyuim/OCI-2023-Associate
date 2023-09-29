@@ -12,11 +12,11 @@
 
 > Object Storage Use Cases
 >
-<img src="./pictures/object-storage-2.png" width="650" style="border-radius: 10px" />
+<img src="./pictures/object-storage-2.PNG" width="650" style="border-radius: 10px" />
 
 ## Object Storage Resources
-<img src="./pictures/object-storage-3.png" width="650" style="border-radius: 10px" />
+<img src="./pictures/object-storage-3.PNG" width="650" style="border-radius: 10px" />
 
 > Endpoint Example 
 >
-<img src="./pictures/object-storage-4.png" width="650" style="border-radius: 10px" />
+<img src="./pictures/object-storage-4.PNG" width="650" style="border-radius: 10px" />
