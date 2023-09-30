@@ -183,11 +183,16 @@ THere are two types of keys , HSM(hardware) and software keys.
 here is an example of having  emit + event service + notification service to work together. What it does is that once a new oject is uploaded to bucket, event rules are triggerred and using notification service to send out emails. 
 
 > Create Topics
-> <img src="./pictures/object-storage-22.PNG" width="650" style="border-radius: 10px" />
+> 
+<img src="./pictures/object-storage-22.PNG" width="650" style="border-radius: 10px" />
+
 > Create Subscriptiopns within topic
-> <img src="./pictures/object-storage-23.PNG" width="650" style="border-radius: 10px" />
+> 
+<img src="./pictures/object-storage-23.PNG" width="650" style="border-radius: 10px" />
+
 > Go to Observability&Management > Event Service > Rules to create a new rule
-> <img src="./pictures/object-storage-24.PNG" width="650" style="border-radius: 10px" />
+> 
+<img src="./pictures/object-storage-24.PNG" width="650" style="border-radius: 10px" />
 
 ## Skill Checks
 
