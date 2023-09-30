@@ -18,7 +18,7 @@
   - [Customer Managed Key](#customer-managed-key)
     - [Vault](#vault)
     - [Key](#key)
-  - [Emit Oject Events](#emit-oject-events)
+  - [Emit Object Events](#emit-object-events)
   - [Skill Checks](#skill-checks)
 
 
@@ -176,7 +176,7 @@ THere are two types of keys , HSM(hardware) and software keys.
 <img src="./pictures/object-storage-21.PNG" width="650" style="border-radius: 10px" />
 
 `After you have create your own key and assigned to a bucket, you can choose to re-rencrypt the bucket or re-encrypt a object with the new assigned key`
-## Emit Oject Events
+## Emit Object Events
  With Emit Object Events option abled, you can then go and create automation based on the state changes to objects. Along side this option, you need 2 addtional services to get it working. 
  - The first one is *Event Service*. And  (to create Rules)
  - the second one is *Notification Service*.(to create subscriptions)
