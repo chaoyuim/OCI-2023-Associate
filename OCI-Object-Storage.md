@@ -13,6 +13,11 @@
   - [Retention Rules](#retention-rules)
     - [To understand time-bound retention rules, examples](#to-understand-time-bound-retention-rules-examples)
   - [:train: Object Copy](#train-object-copy)
+  - [:star: Loggings](#star-loggings)
+  - [Pre-Authenticated Requests](#pre-authenticated-requests)
+  - [Customer Managed Key](#customer-managed-key)
+    - [Vault](#vault)
+    - [Key](#key)
   - [Skill Checks](#skill-checks)
 
 
@@ -126,9 +131,50 @@ There are two types of retention rules.
 
 
 ## :train: Object Copy 
+> Almost useless if you copy with UI, it only allows single file copying....
+> 
 <img src="./pictures/object-storage-14.PNG" width="650" style="border-radius: 10px" />
 
 
+## :star: Loggings
+<img src="./pictures/object-storage-15.PNG" width="650" style="border-radius: 10px" />
+<img src="./pictures/object-storage-16.PNG" width="650" style="border-radius: 10px" />
+
+> There are two ways to create logs for Object Storage Read & Write
+> - First way, via Log option in the bucket as showing above
+> - The second way, is via Observability & Management >> Logggin >> Enable Servie Log
+<img src="./pictures/object-storage-17.PNG" width="650" style="border-radius: 10px" />
+
+
+
+## Pre-Authenticated Requests
+> is the way to allow access to users on a private bucket
+> - [ ] on Bucket level 
+> - [ ] on single Oject 
+> - [ ] on Prefix level
+>
+> The rights are `Read`,`write` and `Read & Write`
+> You always need to provide an expiration time
+>
+> Once a pre-authenitcation link are created, the link will only show once..
+<img src="./pictures/object-storage-18.PNG" width="650" style="border-radius: 10px" />
+
+
+## Customer Managed Key
+
+### Vault
+Create a new Vault
+### Key
+create customer managed keys
+THere are two types of keys , HSM(hardware) and software keys. 
+<img src="./pictures/object-storage-19.PNG" width="650" style="border-radius: 10px" />
+<img src="./pictures/object-storage-20.PNG" width="650" style="border-radius: 10px" />
+
+> :warning: To use Customers Managed keys, you need to create following policy. It can be a dedicated policy which is not assigned to a group
+
+<img src="./pictures/object-storage-21.PNG" width="650" style="border-radius: 10px" />
+
+`After you have create your own key and assigned to a bucket, you can choose to re-rencrypt the bucket or re-encrypt a object with the new assigned key`
 
 
 ## Skill Checks
