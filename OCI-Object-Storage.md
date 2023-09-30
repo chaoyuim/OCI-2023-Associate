@@ -176,16 +176,18 @@ THere are two types of keys , HSM(hardware) and software keys.
 <img src="./pictures/object-storage-21.PNG" width="650" style="border-radius: 10px" />
 
 `After you have create your own key and assigned to a bucket, you can choose to re-rencrypt the bucket or re-encrypt a object with the new assigned key`
-<<<<<<< HEAD
-
-
 ## Emit Oject Events
  With Emit Object Events option abled, you can then go and create automation based on the state changes to objects. Along side this option, you need 2 addtional services to get it working. 
- - The first one is *Event Service*. And  (create rules)
- - the second one is *Notification Service*.(create subscriptions)
-=======
->>>>>>> e260bded382b8d7476f190c7594aeef093f5d75b
+ - The first one is *Event Service*. And  (to create Rules)
+ - the second one is *Notification Service*.(to create subscriptions)
+here is an example of having  emit + event service + notification service to work together. What it does is that once a new oject is uploaded to bucket, event rules are triggerred and using notification service to send out emails. 
 
+> Create Topics
+> <img src="./pictures/object-storage-22.PNG" width="650" style="border-radius: 10px" />
+> Create Subscriptiopns within topic
+> <img src="./pictures/object-storage-23.PNG" width="650" style="border-radius: 10px" />
+> Go to Observability&Management > Event Service > Rules to create a new rule
+> <img src="./pictures/object-storage-24.PNG" width="650" style="border-radius: 10px" />
 
 ## Skill Checks
 
