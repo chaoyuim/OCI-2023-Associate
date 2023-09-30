@@ -246,9 +246,9 @@ THere are two types of keys , HSM(hardware) and software keys.
 - [x] There can be a maximum of one replication policy per source bucket.
 
 10. Which two of these statements about object versioning are correct?
-- [ ] Object versioning does not increase your storage costs.
+- [ ] Object versioning does not increase your storage costs. :warning: It does increase
 - [x] Object versioning is enabled at the bucket level. (*)
-- [x] You cannot enable versioning on a bucket with active retention rules. (*)
+- [x] You cannot enable versioning on a bucket with active retention rules. :warning: 
 - [ ] A bucket that is versioning-enabled can have only two versions of an object.
   
   :star:` Object versioning is enabled at the bucket level. You cannot enable versioning on a bucket with active retention rules. A bucket that is versioning-enabled can have many versions of an object. Standard Oracle Cloud Infrastructure pricing applies to each bucket that is enabled for versioning. You are charged for all latest object versions and previous object versions.`
