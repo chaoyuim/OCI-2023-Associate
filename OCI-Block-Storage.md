@@ -21,7 +21,7 @@
 
 ### Block Volume
 
-<img src="./pictures/Block-storage-2.PNG" width="650" border-radius: "10px" style="border-radius: 10px" />
+<img src="./pictures/Block-storage-2.PNG" width="650" style="border-radius: 10px" />
 
 
 ## Volume Attachment Types
