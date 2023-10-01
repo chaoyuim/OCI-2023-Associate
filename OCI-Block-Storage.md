@@ -10,6 +10,8 @@
     - [Boot Volume performance](#boot-volume-performance)
     - [Boot Volume Dynamic Performance Scalling](#boot-volume-dynamic-performance-scalling)
   - [Resize a Volume](#resize-a-volume)
+    - [Steps to do online Resizing](#steps-to-do-online-resizing)
+  - [Volume Backup and Restoration](#volume-backup-and-restoration)
   - [Skill Checks](#skill-checks)
 
 ## Overview 
@@ -81,10 +83,49 @@ When you attach a block volume to an instance, you have the following ways
 
 <img src="./pictures/Block-storage-10.PNG" width="650" style="border-radius: 10px" />
 
+### Steps to do online Resizing
+
+1. Edit Volume to a larger size 
+2. SSH to instance 
+3. Run shell script to rescan - `shell cmd is showing on OCI console during resizing settings`
+4. Run shell script to Extend partition  - `find in online doc`
 
 
+## Volume Backup and Restoration
 
+> Two Wyas to initiate a backup
+>
+<img src="./pictures/Block-storage-11.PNG" width="650" style="border-radius: 10px" />
 
+> Two Types of backups
+>
+:white_large_square: Incremental
+
+:white_large_square: Full backup 
+
+------------------
+
+ :cloud: Oracle backup Policies 
+
+- :earth_africa: Bronze 
+  - Incremental Backups
+    - Monthly incremental backup ( Retention Period of 12 month)
+    - Yearly incremental Backup ( Retention Period of 5 years)
+  - NO Full Backups
+  
+- :earth_africa: Silver (+ Bronze)
+  - everything from Bronze
+  - Weekly incremental backups (Retention Period of 4 weeks)
+
+- :earth_africa: Gold (+ Silver + Bronze)
+  - everything from Bronze
+  - everything from Silver
+  - daily incremental backups (Retention Period of 7 days)
+---------------
+
+ :cloud: Customized, User-defined backup policy
+
+:grey_exclamation: `User can define the schedules, types of backup (incremental, full) and retention period.` 
 
 ## Skill Checks
 
