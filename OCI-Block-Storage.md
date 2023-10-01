@@ -9,7 +9,7 @@
   - [Boot Volume](#boot-volume)
 
 ## Overview 
-<img src="./pictures/Block-storage-1.png" width="650" style="border-radius: 10px" />
+<img src="./pictures/Block-storage-1.PNG" width="650" style="border-radius: 10px" />
 
 ### Local NVMe 
  
@@ -21,7 +21,7 @@
 
 ### Block Volume
 
-<img src="./pictures/Block-storage-2.png" width="650" style="border-radius: 10px" />
+<img src="./pictures/Block-storage-2.PNG" width="650" style="border-radius: 10px" />
 
 
 ## Volume Attachment Types
