@@ -10,6 +10,11 @@
     - [NFS Export Options](#nfs-export-options)
       - [Example](#example)
       - [:warning:](#warning)
+      - [Access Control Settings](#access-control-settings)
+      - [File System Path](#file-system-path)
+        - [what is Export path](#what-is-export-path)
+        - [What is Mount point path](#what-is-mount-point-path)
+        - [What is File System path](#what-is-file-system-path)
 
 ## Overview 
 
@@ -67,3 +72,19 @@ NFS Export Options enable you to create more granular access control. You can sp
 
 #### :warning:
 <img src="./pictures/File-storage-10.PNG" width="650" style="border-radius: 10px" />
+
+#### Access Control Settings
+<img src="./pictures/File-storage-11.PNG" width="650" style="border-radius: 10px" />
+
+#### File System Path
+<img src="./pictures/File-storage-12.PNG" width="650" style="border-radius: 10px" />
+
+##### what is Export path
+<img src="./pictures/File-storage-13.PNG" width="650" style="border-radius: 10px" />
+
+##### What is Mount point path
+<img src="./pictures/File-storage-14.PNG" width="650" style="border-radius: 10px" />
+
+
+##### What is File System path
+<img src="./pictures/File-storage-15.PNG" width="650" style="border-radius: 10px" />
