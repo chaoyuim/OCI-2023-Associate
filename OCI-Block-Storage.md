@@ -12,6 +12,12 @@
   - [Resize a Volume](#resize-a-volume)
     - [Steps to do online Resizing](#steps-to-do-online-resizing)
   - [Volume Backup and Restoration](#volume-backup-and-restoration)
+  - [Volume Clones](#volume-clones)
+  - [Volume Clones VS Volume Clone](#volume-clones-vs-volume-clone)
+  - [Cross Region Replications](#cross-region-replications)
+  - [Volume Groups](#volume-groups)
+  - [Cross Availability Domain Replication](#cross-availability-domain-replication)
+  - [Block Volume Encryptions](#block-volume-encryptions)
   - [Skill Checks](#skill-checks)
 
 ## Overview 
@@ -110,8 +116,8 @@ When you attach a block volume to an instance, you have the following ways
 - :earth_africa: Bronze 
   - Incremental Backups
     - Monthly incremental backup ( Retention Period of 12 month)
-    - Yearly incremental Backup ( Retention Period of 5 years)
-  - NO Full Backups
+  - Full Backups
+    - Yearly full Backup ( Retention Period of 5 years)
   
 - :earth_africa: Silver (+ Bronze)
   - everything from Bronze
@@ -126,6 +132,67 @@ When you attach a block volume to an instance, you have the following ways
  :cloud: Customized, User-defined backup policy
 
 :grey_exclamation: `User can define the schedules, types of backup (incremental, full) and retention period.` 
+
+
+
+## Volume Clones
+
+Cloning enables you to make a copy of an existing block volume without needing to go through the backup and restore process. A cloned volume is a point in time direct disk-to-disk deep copy of the source volume. So all the data that is in the source volume when the clone is created is copied to the cloned volume. And any subsequent changes to the data on the source volume are not copied to the clone.
+
+
+## Volume Clones VS Volume Clone
+
+<img src="./pictures/Block-storage-12.PNG" width="650" style="border-radius: 10px" />
+
+
+## Cross Region Replications
+> :warning: Depending on the source regions, the destination regions can be limited
+>
+<img src="./pictures/Block-storage-13.PNG" width="650" style="border-radius: 10px" />
+
+## Volume Groups
+> :warning: you can only group Block/Boot Volume in the `Same Available Domain`.
+
+<img src="./pictures/Block-storage-14.PNG" width="650" style="border-radius: 10px" />
+
+User case of Volume Grouping
+
+Volume groups can simplify the process to create time consistent backups of running enterprise applications. There is also a capability to perform volume group backups automatically on a schedule and retain them based on a particular backup policy. The benefit is you can then restore an entire group of volumes from a volume group backup. The best part is volume group is available at no additional charge.
+
+<img src="./pictures/Block-storage-15.PNG" width="650" style="border-radius: 10px" />
+<img src="./pictures/Block-storage-16.PNG" width="650" style="border-radius: 10px" />
+
+> Actions you can perform on a volumes groups
+>
+   :white_check_mark: Create Group Back
+
+   :white_check_mark: Group Clone
+
+   :white_check_mark: Move Resources
+
+
+
+<img src="./pictures/Block-storage-17.PNG" width="650" style="border-radius: 10px" />
+
+   :white_check_mark: During Creation enable Cross Region Replication
+
+<img src="./pictures/Block-storage-18.PNG" width="650" style="border-radius: 10px" />
+
+
+## Cross Availability Domain Replication
+:heavy_exclamation_mark: The only difference between Cross AD and Cross Region related to costs is that Cross AD does not include network traffic costs
+
+
+## Block Volume Encryptions
+
+Block Volume can be encrypted by both 
+- [ ] oracle managed keys (default)
+- [ ] or customer created keys
+
+:heavy_exclamation_mark: To allow block volume or any other service to use customer management keys, a new policy need to be create 
+
+    Allow service blockstorage to use keys in tenancy
+
 
 ## Skill Checks
 
@@ -180,3 +247,54 @@ When you attach a block volume to an instance, you have the following ways
     :white_check_mark: Read/Write (*)
 
     :white_large_square: Write/Execute    
+
+
+6. Which two statements about resizing a block volume are correct?
+   
+    :white_check_mark: You can restore from a volume backup to a larger volume. (*)
+
+    :white_check_mark: You can expand an existing volume in place with online resizing. (*)
+    
+    :white_large_square: You can increase as well as decrease the size of the volume.
+
+    :white_large_square: You can clone an existing volume to a new, smaller volume.
+
+7. You would like to make a point-in-time `snapshot` of the data on a block volume and later restore it as a new volume in a different availability domain within the same region. What would you create?
+   
+    :white_large_square: A clone
+
+    :white_check_mark: A backup (*)
+
+    :white_large_square: A replica
+
+    :white_large_square: A prototype
+
+8. Which statement about the OCI Block Volume Cross Region Replication is NOT correct?
+    
+    :white_large_square: It does not cause any downtime or impact on source volumes.
+
+    :white_large_square: The replica in the destination region is always billed using the Block Storage Lower Cost option price.
+    
+    :white_large_square: It performs ongoing automatic asynchronous replication of block volumes to other regions.
+    
+    :white_check_mark: You can resize a volume with Cross Region Replication enabled. (*)
+
+9. Which two of the following statements about volume groups are correct?
+   
+    :white_large_square: When you delete a volume group, the individual volumes in the group are deleted.
+
+    :white_check_mark: You can add up to 32 volumes in a volume group. (*)
+
+    :white_large_square: Each volume can be a part of multiple volume groups.
+
+    :white_check_mark: A volume group can include both boot volumes and block volumes. (*)
+
+10. You would like to make a point-in-time disk-to-disk deep copy of an existing block volume without needing to go through the backup and restore process. What would you create?
+   
+    :white_large_square: A twin
+
+    :white_large_square: A replica
+
+    :white_large_square: A prototype
+
+    :white_check_mark: A clone (*)
