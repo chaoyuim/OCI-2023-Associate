@@ -15,6 +15,7 @@
         - [what is Export path](#what-is-export-path)
         - [What is Mount point path](#what-is-mount-point-path)
         - [What is File System path](#what-is-file-system-path)
+  - [Skill Checks](#skill-checks)
 
 ## Overview 
 
@@ -88,3 +89,62 @@ NFS Export Options enable you to create more granular access control. You can sp
 
 ##### What is File System path
 <img src="./pictures/File-storage-15.PNG" width="650" style="border-radius: 10px" />
+
+
+## Skill Checks
+
+1. Which component represents paths within a client instance to a locally accessible directory to which the remote file system is mounted?
+ 
+    :white_large_square: Import Path
+
+    :white_large_square: Dump Path
+    
+    :white_large_square: Export Path
+    
+    :white_check_mark: Mount Point Path (*)
+
+1. Which of the following statements about the OCI File System Mount Target is NOT true?
+
+    :white_large_square: File systems are exported through mount targets.
+    
+    :white_check_mark: You cannot reuse the same mount target to make multiple file systems available on the network. (*)
+
+    :white_large_square: It provides the IP address or DNS name that is used with a unique export path to mount the file system.
+
+    :white_large_square: It is an NFS endpoint that is present in a VCN subnet.
+
+    > :star: A mount target is an NFS endpoint that lives in a VCN subnet of your choice and provides network access for file systems. You can reuse the same mount target to make as many file systems available on the network as you wish. To reuse the same mount target for multiple file systems, create an export in the mount target for each file system.
+
+
+3. Which statement about the OCI File System Export is correct?
+
+    :white_large_square: You cannot delete exports in a mount target.
+
+    :white_large_square: The export path is the same as the client mount point path.
+
+    :white_check_mark: You can add export options to an export to control access to the file system. (*)
+
+    :white_large_square: Each export set contains only one export.
+
+
+4. Which component uniquely identifies the file system within the mount target, letting you associate many file systems to a single mount target?
+
+    :white_check_mark: Export Path (*)
+
+    :white_large_square: Import Path
+
+    :white_large_square: Mount Point Paths
+
+    :white_large_square: Dump Path
+
+5. Which statement about Oracle Cloud Infrastructure (OCI) File Storage service is correct?
+
+    :white_check_mark: The File Storage service supports the Network File System version 3.0 (NFSv3) protocol. (*)
+    
+    :white_large_square: Storage provisioning is not fully managed.
+    
+    :white_large_square: You cannot access a file system from outside the VCN.
+    
+    :white_large_square: You cannot connect to a file system from a bare metal instance.
+
+    >:star: The File Storage service supports the Network File System version 3.0 (NFSv3) protocol. The service supports the Network Lock Manager (NLM) protocol for file locking functionality. You can connect to a File Storage service file system from any bare metal, virtual machine, or container instance in your Virtual Cloud Network (VCN). You can also access a file system from outside the VCN using VCN peering, Oracle Cloud Infrastructure FastConnect, and Internet Protocol security (IPSec) virtual private network (VPN).
