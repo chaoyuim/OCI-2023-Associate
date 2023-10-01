@@ -44,13 +44,13 @@
 
 > :six: copy the mount commands and run on the client
 
-<img src="./pictures/File-storage-7.PNG" width="650" style="border-radius: 10px" />  
+<img src="./pictures/File-storage-7.PNG" width="300" style="border-radius: 10px" />  
 
 
 
 ### NFS Export Options
 
-    NFS Export Options enable you to create more granular access control. You can specify access levels for IP addresses or CIDR blocks, connecting to the file system through exports in a mount target. And access can be restricted so that each client's file system is inaccessible and invisible to the other so you can control access to the file system. NFS Export Options are a set of parameters within the Export that specifies the level of access granted to NFS clients when they connect to a mount target.
+NFS Export Options enable you to create more granular access control. You can specify access levels for IP addresses or CIDR blocks, connecting to the file system through exports in a mount target. And access can be restricted so that each client's file system is inaccessible and invisible to the other so you can control access to the file system. NFS Export Options are a set of parameters within the Export that specifies the level of access granted to NFS clients when they connect to a mount target.
 
 <img src="./pictures/File-storage-8.PNG" width="650" style="border-radius: 10px" />  
 
