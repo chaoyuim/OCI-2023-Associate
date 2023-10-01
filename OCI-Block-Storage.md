@@ -74,10 +74,12 @@ When you attach a block volume to an instance, you have the following ways
 
 
 ## Resize a Volume 
-> :warning: One can only increasing a Volume Size, NOT decrease
+> :warning: One can `only increasing` a Volume Size, `NOT` decrease
+
+> :star: One can choose `online  resizing ` or  `Offline Resizing`
+> 
 
 <img src="./pictures/Block-storage-10.PNG" width="650" style="border-radius: 10px" />
-
 
 
 
