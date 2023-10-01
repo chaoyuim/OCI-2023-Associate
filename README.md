@@ -1,6 +1,6 @@
 # OCI-2023-Associate
 
-:raising_hand: This is a study notes of the Oracle Cloud 2023 Associate Cloud Infrastructure Architect :sleepy:
+:raising_hand: This is a study note of the Oracle Cloud 2023 Associate Cloud Infrastructure Architect :sleepy:
 
 - [IAM - Identity & Access Mangement]()
 - [NetWork]()
