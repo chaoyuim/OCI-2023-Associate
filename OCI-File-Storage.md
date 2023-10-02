@@ -107,7 +107,7 @@ mindmap
   root((mindmap))
     Origins
       Long history
-      :warning:(fa fa-book)
+      :warning:
       Popularisation
         British popular psychology author Tony Buzan
     Research
