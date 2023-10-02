@@ -106,7 +106,12 @@ NFS Export Options enable you to create more granular access control. You can sp
     sudo mkdir snapshot-xx 
   ```  
 
-> HOw to 
+> How to restore files from snapshot
+⚠️: basically copy files from snapshot into your working directory
+```shell 
+sudo cp -r * /
+```
+
 
 
 
