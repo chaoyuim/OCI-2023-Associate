@@ -15,6 +15,7 @@
         - [what is Export path](#what-is-export-path)
         - [What is Mount point path](#what-is-mount-point-path)
         - [What is File System path](#what-is-file-system-path)
+  - [File storage snapshot](#file-storage-snapshot)
   - [Skill Checks](#skill-checks)
 
 ## Overview 
@@ -89,6 +90,23 @@ NFS Export Options enable you to create more granular access control. You can sp
 
 ##### What is File System path
 <img src="./pictures/File-storage-15.PNG" width="650" style="border-radius: 10px" />
+
+
+
+
+## File storage snapshot
+<img src="./pictures/File-storage-16.PNG" width="650" style="border-radius: 10px" />
+
+> there are two ways to create a snapshot
+
+- [x] via OCI console
+- [x] via SSH console
+  ```shell
+    cd /pathtoyoursnapshot/.snapshot
+    sudo mkdir snapshot-xx 
+  ```  
+
+> HOw to 
 
 
 
