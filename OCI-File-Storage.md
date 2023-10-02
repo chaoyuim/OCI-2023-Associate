@@ -16,6 +16,8 @@
         - [What is Mount point path](#what-is-mount-point-path)
         - [What is File System path](#what-is-file-system-path)
   - [File storage snapshot](#file-storage-snapshot)
+  - [File Storage Cloning](#file-storage-cloning)
+  - [In-transit Encryptions](#in-transit-encryptions)
   - [Skill Checks](#skill-checks)
 
 ## Overview 
@@ -114,6 +116,20 @@ sudo cp -r * /
 
 ## File Storage Cloning
 
+> What is file system clone?
+
+A clone is a NEW file system/storage that is created based on a snapshot of an existing file system.
+
+A clone is a `new file system`  that is created `based on a snapshot  of an existing file system`. Snapshots preserve the state of the data of a file system at a particular point in time. If you take snapshots of a file system at regular intervals, you can create clones of the file system as it existed at multiple points in its lifetime.
+
+A snapshot provides the initial blueprint for a clone. You can clone a parent file system, or you can clone a clone, as long as there's at least one snapshot available. At the point of creation, the data included in the clone is identical to the data in the snapshot. After creation, data changes in the clone aren't included in the original file system. Conversely, any data changes to the original file system aren’t included in the clone. All file systems operate independently of each other, regardless of whether they are parent file systems, clones, or clones of clones.
+
+
+
+## In-transit Encryptions
+
+> what is in-transit encriptions?
+> 
 
 
 ```mermaid
