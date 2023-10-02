@@ -112,6 +112,7 @@ NFS Export Options enable you to create more granular access control. You can sp
 sudo cp -r * /
 ```
 
+## File Storage Cloning
 
 
 
