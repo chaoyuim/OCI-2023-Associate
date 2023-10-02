@@ -91,6 +91,19 @@ NFS Export Options enable you to create more granular access control. You can sp
 <img src="./pictures/File-storage-15.PNG" width="650" style="border-radius: 10px" />
 
 
+
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+    F --> B
+```
+
+
+
 ## Skill Checks
 
 1. Which component represents paths within a client instance to a locally accessible directory to which the remote file system is mounted?
