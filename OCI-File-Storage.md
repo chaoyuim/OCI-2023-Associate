@@ -17,7 +17,8 @@
         - [What is File System path](#what-is-file-system-path)
   - [File storage snapshot](#file-storage-snapshot)
   - [File Storage Cloning](#file-storage-cloning)
-  - [In-transit Encryptions](#in-transit-encryptions)
+  - [In-transit Encryptions for File Storage system](#in-transit-encryptions-for-file-storage-system)
+  - [File system Replication](#file-system-replication)
   - [Skill Checks](#skill-checks)
 
 ## Overview 
@@ -126,10 +127,14 @@ A snapshot provides the initial blueprint for a clone. You can clone a parent fi
 
 
 
-## In-transit Encryptions
+## In-transit Encryptions for File Storage system
 
 > what is in-transit encriptions?
 > 
+
+## File system Replication
+
+
 
 
 ```mermaid
